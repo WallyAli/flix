@@ -1,7 +1,20 @@
 <article>
   <header>
     <h1><%= @movie.title %></h1>
+    <%= image_for(@movie) %></br>
+      <%= @movie.cast %>
   </header>
+
+<h3>Director</h3>
+<p>
+  <%= @movie.director %>
+</p>
+
+<h3>Duration</h3>
+<p>
+  <%= @movie.duration %>
+</p>
+
   <h2>Description</h2>
   <p>
     <%= @movie.description %>
